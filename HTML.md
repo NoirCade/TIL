@@ -42,3 +42,48 @@
 > 앵커 a
 
     <a href="https://asdf.com">링크</a>
+
+이때, target="_blank 를 추가로 붙여서 새 창으로 열 수 있다
+
+    <a href="https://asdf.com" target="_blank">새 창으로 링크</a>
+
+> 이미지 img
+
+    <img src="이미지 파일 주소>
+
+> 리스트 ul, ol, li
+
+    <ul>
+        <li>순번 없는</li>
+        <li>리스트</li>
+    </ul>
+
+    <ol>
+        <li>순번 있는</li>
+        <li>리스트</li>
+    </ol>
+
+> 표 table, thead, tbody, tfoot
+
+    <table>
+        <thead>
+            <th>
+                <td>1행 1열</td>
+                <td>1행 2열</td>
+            </th>
+        <thead>
+        <tbody>
+            <tr>
+                <td>2행 1열</td>
+                <td>2행 2열</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>3행 1열</td>
+                <td>3행 2열</td>
+            </tr>
+        </tfoot>
+    </table>
+
+그 밖에도 다양한 문법들이 존재
