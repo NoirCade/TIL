@@ -35,21 +35,25 @@
     <h5>제목5</h5>
     <h6>제목6</h6>
 
+
 > 문단 p
 
     <p>hello world</p>
+
 
 > 앵커 a
 
     <a href="https://asdf.com">링크</a>
 
-이때, target="_blank 를 추가로 붙여서 새 창으로 열 수 있다
+    이때, target="_blank 를 추가로 붙여서 새 창으로 열 수 있다
 
     <a href="https://asdf.com" target="_blank">새 창으로 링크</a>
+
 
 > 이미지 img
 
     <img src="이미지 파일 주소>
+
 
 > 리스트 ul, ol, li
 
@@ -62,6 +66,7 @@
         <li>순번 있는</li>
         <li>리스트</li>
     </ol>
+
 
 > 표 table, thead, tbody, tfoot
 
@@ -85,5 +90,6 @@
             </tr>
         </tfoot>
     </table>
+
 
 그 밖에도 다양한 문법들이 존재
