@@ -164,7 +164,7 @@ ex) padding: 10px 20px 5px 6px;
         border: 3px solid black;
     }
 
-border-width, border-style, border-color 를 이용하여 두께, 종류, 색상 중 한가지만 설정할 수도 있다.
+border-width, border-style, border-color 를 이용하여 두께, 종류, 색상 중 한가지만 설정할 수도 있다
 <br>
 
 ### 4. 마진
@@ -183,3 +183,52 @@ border-width, border-style, border-color 를 이용하여 두께, 종류, 색상
         height: 100px;
     }
 <br>
+<hr>
+
+## 레이아웃
+> 웹 페이지에서 각 요소들은 기본적으로 좌에서 우, 위에서 아래의 순서로 배치된다
+그 중에서 한 줄에 여러개가 표시되는 요소를 '인라인 요소(ex) 앵커), 혼자 한 줄을 다 차지하는 요소를 '블락 요소(ex) 패러그래프)라고 부른다
+
+    각 요소들을 기본 배치흐름에서 벗어나게 하여 새롭게 위치시키는 것을 레이아웃 작업이라고 부른다
+
+### 1. float
+> 요소가 기본 배치형식을 따르거나, 좌/우로 배치되도록 할 수 있다. 블락 요소에 float을 적용하면 인라인 요소처럼 다단 구조를 만들 수 있다
+
+    img {
+        float: 위치;
+    }
+
+none, left, right 으로 설정할 수 있다
+
+### 2. clear
+> 적용한 float 속성으로 인해 다음에 올 요소들이 영향받지 않고 다시 기본 배치로 설정한다
+
+    div {
+        clear: 위치;
+    }
+
+none, left, right 으로 설정할 수 있다
+
+### 3. overflow
+> 정해진 구역에 콘텐츠가 다 들어가지 않을 경우, 넘어가는 부분을 어떻게 처리할지 설정한다
+
+    div {
+        overflow: 옵션;
+    }
+
+visible: 구역을 넘어도 전부 노출되게
+hidden: 구역 외의 부분은 감춤
+scroll: 스크롤을 이용하여 표시
+auto: 구역을 넘어가면 스크롤을 사용
+
+### 4. position
+> 요소의 배치 기준을 지정한다
+
+    div {
+        position: 옵션;
+    }
+
+static: 기본 위치, 위치좌표 속성이 적용되지 않는다
+absolute: <u>position 속성이 static이 아닌 가장 근접한 상위요소</u>를 기준으로 위치좌표 값에 따라 배치
+relative: 기본 위치를 기준으로 하여 위치좌표 값을 적용
+fixed: 브라우저의 뷰포트를 기준으로 하여 배치하며, 스크롤해도 사라지지 않는다!
